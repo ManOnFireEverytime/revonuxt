@@ -406,7 +406,7 @@
                     <div class="col-lg-6" data-sal="slide-up" data-sal-duration="1000">
                         <div class="contact-address mb--30">
                             <div class="section-heading heading-light-left">
-                                <span class="subtitle">Need a designer?</span>
+                                <span class="subtitle">Want to join us?</span>
                                 <h2 class="title">Let’s work together</h2>
                             </div>
                             <div class="address-list">
