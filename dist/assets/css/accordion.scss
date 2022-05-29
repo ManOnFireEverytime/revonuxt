@@ -1,0 +1,70 @@
+
+ul.horizontal-accordion {
+  display: flex;
+  min-height: 100vh;
+  max-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+}
+
+ul.horizontal-accordion li {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  padding: 20px;
+  background: #840BFC;
+  cursor: pointer;
+  transition: all .5s ease;
+
+}
+
+
+ul.horizontal-accordion li:hover {
+  background: darken(#840BFC, 3);
+}
+
+ul.horizontal-accordion li.active {
+  flex: 5;
+  background: #fff;
+  cursor: default;
+}
+
+ul.horizontal-accordion li.active h2 {
+  color: #840BFC;
+}
+
+ul.horizontal-accordion li.active .section-content {
+  flex: 4;
+  opacity: 1;
+  transform: scaleX(1);
+  color: #840BFC;
+}
+
+ul.horizontal-accordion li .section-title {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: white;
+}
+
+ul.horizontal-accordion li .section-title h2 {
+  margin: 0;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+}
+
+ul.horizontal-accordion li .section-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: all .25s .1s ease-out;
+}
